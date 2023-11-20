@@ -4,6 +4,7 @@ import { View, Animated, Easing, StyleSheet } from "react-native";
 export const RotatingLogo = ({
   duration = 1000,
   rotationGrades = ["360deg", "0deg"],
+  imgSrc = require("./storewise-logo-cut.png"),
 }) => {
   const rotateValue = new Animated.Value(0);
 
@@ -33,7 +34,7 @@ export const RotatingLogo = ({
     <View style={styles.container}>
       <Animated.Image
         style={[styles.logo, { transform: [{ rotate }] }]}
-        source={require("./storewise-logo-cut.png")}
+        source={imgSrc}
       />
     </View>
   );
