@@ -14,8 +14,14 @@ import { ChasingBubbles } from "../ChasingBubbles/ChasingBubbles";
 import { BendingCircle } from "../BendingCircle/BendingCircle";
 import { NeumorphicButton } from "../NeumorphicButton";
 import { GradientClock } from "../GradientClock";
+import { CircleFillAnimation } from "../CircleFillChart/CircleFillChart";
+import { Wave } from "../WaveAnimation/WaveAnimation";
+import { RotatingLogo } from "../RotatingLogo/RotatingLogo";
 
 export const AnimationScreenNames = {
+  rotating: "Rotating Logo",
+  wave: "Wave Animation Loader",
+  fill: "Circle Fill Chart",
   GRADIENT_CLOCK: "Gradient Clock 🕗",
   BENDING_CIRCLE: "Bending Circle 🛟",
   CHASING_BUBBLES: "Chasing Bubbles 🫧",
@@ -31,7 +37,19 @@ export const AnimationScreenNames = {
   VITAL_SIGN_MONITOR: "Vital Sign Monitor ❤️",
 };
 
-export const allScreens: Screen[] = [
+export const allScreens: any[] = [
+  {
+    name: AnimationScreenNames.rotating,
+    component: RotatingLogo,
+  },
+  {
+    name: AnimationScreenNames.wave,
+    component: Wave,
+  },
+  {
+    name: AnimationScreenNames.fill,
+    component: CircleFillAnimation,
+  },
   {
     name: AnimationScreenNames.GRADIENT_CLOCK,
     component: GradientClock,
