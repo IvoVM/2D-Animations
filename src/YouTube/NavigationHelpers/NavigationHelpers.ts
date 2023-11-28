@@ -18,8 +18,10 @@ import { CircleFillAnimation } from "../CircleFillChart/CircleFillChart";
 import { Wave } from "../WaveAnimation/WaveAnimation";
 import { RotatingLogo } from "../RotatingLogo/RotatingLogo";
 import { Spinner } from "../Spinner/Spinner";
+import { BotomSheet } from "../../BottomSheet/BottomSheet";
 
 export const AnimationScreenNames = {
+  bottomsheet:"BottomSheet",
   spinner:"Spinner",
   rotating: "Rotating Logo",
   wave: "Wave Animation Loader",
@@ -40,6 +42,11 @@ export const AnimationScreenNames = {
 };
 
 export const allScreens: any[] = [
+  {
+    name: AnimationScreenNames.bottomsheet,
+    component: BotomSheet,
+
+  },
   {
     name: AnimationScreenNames.spinner,
     component: Spinner,
