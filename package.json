@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@georgedoescode/spline": "^1.0.1",
+    "@gorhom/bottom-sheet": "^4",
     "@react-native-masked-view/masked-view": "0.2.9",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/stack": "^6.3.16",
