@@ -25,20 +25,15 @@ export const Wave = ({ size = 256, progress = 10 }) => {
   const [up, setUp]: any = useState(progress);
 
   useEffect(() => {
-    console.log("Progress updated:", up);
-
     verticalOffset.current = (1 - up / 100) * innerCircleSize;
-    console.log("Vertical Offset updated:", verticalOffset.current);
   }, [up, size, innerCircleSize]);
 
-  //AnimatedDoth value,
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setUp(Math.min(100, up + 5));
+  //   }, 2000);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setUp(Math.min(100, up + 5));
-    }, 2000);
-
-  }, [up]);
+  // }, [up]);
 
   const createAnimatedPath = (phase = 20) => {
     const d3Points = Array.from({ length: size }).map((_, i) => {
