@@ -14,11 +14,11 @@ import { ChasingBubbles } from "../ChasingBubbles/ChasingBubbles";
 import { BendingCircle } from "../BendingCircle/BendingCircle";
 import { NeumorphicButton } from "../NeumorphicButton";
 import { GradientClock } from "../GradientClock";
-// import { CircleFillAnimation } from "../CircleFillChart/CircleFillChart";
+import { CircleFillAnimation } from "../CircleFillChart/CircleFillChart";
 import { Wave } from "../WaveAnimation/WaveAnimation";
 import { RotatingLogo } from "../RotatingLogo/RotatingLogo";
 import { Spinner } from "../Spinner/Spinner";
-// import { BotomSheet } from "../BottomSheet/BottomSheet";
+import { BotomSheet } from "../BottomSheet/BottomSheet";
 import { ProcurementListScreen } from "../ProcurementListScreen/ProcurementListScreen";
 
 export const AnimationScreenNames = {
@@ -48,10 +48,10 @@ export const allScreens: any[] = [
     name: AnimationScreenNames.header,
     component: ProcurementListScreen,
   },
-  // {
-  //   name: AnimationScreenNames.bottomsheet,
-  //   component: BotomSheet,
-  // },
+  {
+    name: AnimationScreenNames.bottomsheet,
+    component: BotomSheet,
+  },
   {
     name: AnimationScreenNames.spinner,
     component: Spinner,
@@ -64,10 +64,10 @@ export const allScreens: any[] = [
     name: AnimationScreenNames.wave,
     component: Wave,
   },
-  // {
-  //   name: AnimationScreenNames.fill,
-  //   component: CircleFillAnimation,
-  // },
+  {
+    name: AnimationScreenNames.fill,
+    component: CircleFillAnimation,
+  },
   {
     name: AnimationScreenNames.GRADIENT_CLOCK,
     component: GradientClock,

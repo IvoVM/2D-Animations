@@ -1,6 +1,8 @@
 import { View, StyleSheet, Animated, Text } from "react-native";
 import { Svg, Path } from "react-native-svg";
 
+//Expo vector icons
+
 interface HeaderProps {
   scrollY: Animated.Value;
 }
@@ -58,7 +60,6 @@ export const Header: React.FC<HeaderProps> = ({ scrollY }) => {
               />
             </Svg>
           </Animated.View>
-
           <Animated.Text
             style={{
               fontSize: TitleSize,
