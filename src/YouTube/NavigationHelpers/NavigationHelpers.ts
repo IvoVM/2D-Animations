@@ -14,15 +14,17 @@ import { ChasingBubbles } from "../ChasingBubbles/ChasingBubbles";
 import { BendingCircle } from "../BendingCircle/BendingCircle";
 import { NeumorphicButton } from "../NeumorphicButton";
 import { GradientClock } from "../GradientClock";
-import { CircleFillAnimation } from "../CircleFillChart/CircleFillChart";
+// import { CircleFillAnimation } from "../CircleFillChart/CircleFillChart";
 import { Wave } from "../WaveAnimation/WaveAnimation";
 import { RotatingLogo } from "../RotatingLogo/RotatingLogo";
 import { Spinner } from "../Spinner/Spinner";
-import { BotomSheet } from "../../BottomSheet/BottomSheet";
+// import { BotomSheet } from "../BottomSheet/BottomSheet";
+import { ProcurementListScreen } from "../ProcurementListScreen/ProcurementListScreen";
 
 export const AnimationScreenNames = {
-  bottomsheet:"BottomSheet",
-  spinner:"Spinner",
+  header: "Animated Header",
+  bottomsheet: "BottomSheet",
+  spinner: "Spinner",
   rotating: "Rotating Logo",
   wave: "Wave Animation Loader",
   fill: "Circle Fill Chart",
@@ -36,21 +38,23 @@ export const AnimationScreenNames = {
   DONUT_CHART: "Donut Chart 🍩",
   MORPHING_CIRCLE: "Morphing Circle ⭕️",
   CONFETTI: "Confetti 🎊",
-  TOUCH_INTERACTIONS: "Touch Interactions 👍",
+  TOUCH_INTERACTIONS: "Touch I snteractions 👍",
   EXPO_PULSE: "Expo Pulse 💙",
   VITAL_SIGN_MONITOR: "Vital Sign Monitor ❤️",
 };
 
 export const allScreens: any[] = [
   {
-    name: AnimationScreenNames.bottomsheet,
-    component: BotomSheet,
-
+    name: AnimationScreenNames.header,
+    component: ProcurementListScreen,
   },
+  // {
+  //   name: AnimationScreenNames.bottomsheet,
+  //   component: BotomSheet,
+  // },
   {
     name: AnimationScreenNames.spinner,
     component: Spinner,
-
   },
   {
     name: AnimationScreenNames.rotating,
@@ -60,10 +64,10 @@ export const allScreens: any[] = [
     name: AnimationScreenNames.wave,
     component: Wave,
   },
-  {
-    name: AnimationScreenNames.fill,
-    component: CircleFillAnimation,
-  },
+  // {
+  //   name: AnimationScreenNames.fill,
+  //   component: CircleFillAnimation,
+  // },
   {
     name: AnimationScreenNames.GRADIENT_CLOCK,
     component: GradientClock,
