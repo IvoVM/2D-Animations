@@ -13,17 +13,17 @@ export default function App() {
   const Stack = createStackNavigator();
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-          presentation: Platform.OS === "android" ? "modal" : undefined,
-        }}
-      >
-        <Stack.Screen name="Menu" component={HomeScreen} />
-        <Stack.Screen name="B-Side Nav 💿" component={BSideStack} />
-        <Stack.Screen name="YouTube Demos 🎥" component={YouTubeStack} />
-      </Stack.Navigator>
-    </NavigationContainer>
+        <NavigationContainer>
+          <Stack.Navigator
+            screenOptions={{
+              headerShown: false,
+              presentation: Platform.OS === "android" ? "modal" : undefined,
+            }}
+          >
+            <Stack.Screen name="Menu" component={HomeScreen} />
+            <Stack.Screen name="B-Side Nav 💿" component={BSideStack} />
+            <Stack.Screen name="YouTube Demos 🎥" component={YouTubeStack} />
+          </Stack.Navigator>
+        </NavigationContainer>
   );
 }
